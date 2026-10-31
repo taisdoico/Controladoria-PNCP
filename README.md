@@ -1,5 +1,3 @@
-
-
 # Controladoria PNCP
 
 **Projeto Final — Módulo 2 | Análise de Dados**
@@ -30,13 +28,11 @@ A partir disso, desenvolvi um processo que permite analisar diferentes aspectos 
 Durante o desenvolvimento do projeto, utilizei diferentes ferramentas e tecnologias, cada uma com uma função específica:
 
 - **Python:** utilizado para auditoria, limpeza e tratamento dos dados.
-- **Pandas:** biblioteca utilizada para manipulação e organização dos dados.
 - **MySQL e MySQL Workbench:** utilizados para gerenciamento do banco de dados, armazenamento das informações e execução de consultas SQL.
-- **SQL:** utilizado para consultas e análises diretamente no banco de dados.
 - **Power BI:** utilizado para desenvolver o dashboard interativo e apresentar os indicadores.
-- **DAX:** utilizado na criação de medidas e da tabela calendário no Power BI.
 - **Git e GitHub:** utilizados para controle de versão e armazenamento do projeto.
-- **Visual Studio Code:** ambiente utilizado para desenvolver e organizar os códigos.
+
+
 
 ## **4. Tratamento e preparação dos dados**
 
@@ -65,3 +61,26 @@ Essa estrutura permite relacionar as informações e explorar os dados de forma 
 **Diagrama da modelagem:**
 
 ![Modelo de Dados - Star Schema](docs/imagens/modelagem_star_schema.png)
+
+
+
+## **6. Fluxo de dados (Pipeline ETL)**
+
+O projeto utiliza um processo de ETL (Extração, Transformação e Carga) desenvolvido em Python para processar os dados disponibilizados pelo PNCP.
+
+Esse processo permite extrair os dados dos arquivos CSV, realizar a limpeza, validação e transformação das informações e, posteriormente, carregá-las no banco de dados MySQL (pmcp_controladoria).
+
+Após essa etapa, os dados são disponibilizados para conexão com o Power BI, onde são desenvolvidos os indicadores, análises e dashboards da Controladoria.
+
+**Etapas do fluxo de dados:**
+
+- **Origem dos dados:** arquivos CSV do PNCP.
+- **Processamento:** extração, limpeza, validação e transformação utilizando Python.
+- **Armazenamento:** carga dos dados tratados no MySQL.
+- **Visualização:** conexão com o Power BI para construção dos indicadores e dashboards.
+
+Essa estrutura organiza o processamento dos dados desde sua origem até a apresentação das informações, permitindo análises mais consistentes e apoiando a tomada de decisão.
+
+**Diagrama do fluxo de dados:**
+
+![Fluxo de Dados - Pipeline ETL](docs/imagens/modelagem_fluxo_dados.png)
