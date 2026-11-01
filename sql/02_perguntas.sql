@@ -11,8 +11,8 @@ USE pncp_controladoria;
 
 -- ============================================================
 -- PERGUNTA 1: ECONOMIA GLOBAL DO PODER PÚBLICO
--- Qual o valor estimado comparável, a economia nominal e
--- o percentual economizado nos itens comparáveis?
+-- Qual é o percentual e o valor financeiro nominal economizado
+-- pelo governo (diferença entre valor estimado e valor homologado)?
 -- ============================================================
 
 SELECT
@@ -22,6 +22,7 @@ SELECT
             ELSE 0
         END
     ) AS valor_estimado_comparavel,
+
 
     SUM(
         CASE
@@ -54,9 +55,9 @@ FROM fato_item_contratado;
 
 
 -- ============================================================
--- PERGUNTA 2: CONCENTRAÇÃO DE FORNECEDORES
--- Quais são os 10 fornecedores com maior volume financeiro
--- homologado e qual a participação de cada um no total?
+-- PERGUNTA 2: CONCENTRAÇÃO E RISCO DE FORNECEDORES
+-- Quem são os maiores fornecedores em volume financeiro e qual
+-- percentual do orçamento público está concentrado neles?
 -- ============================================================
 
 SELECT
@@ -89,11 +90,10 @@ ORDER BY volume_homologado DESC
 LIMIT 10;
 
 
-
 -- ============================================================
--- PERGUNTA 3: EFETIVIDADE POR MODALIDADE
--- Quais modalidades apresentam maior economia percentual
--- e quais possuem maior volume financeiro homologado?
+-- PERGUNTA 3: EFICÁCIA POR MODALIDADE
+-- Quais modalidades licitatórias trazem maior deságio/economia
+-- e quais concentram o maior volume de recursos?
 -- ============================================================
 
 SELECT
@@ -148,9 +148,8 @@ ORDER BY volume_homologado DESC;
 
 -- ============================================================
 -- PERGUNTA 4: TEMPO DO CICLO DE COMPRAS
--- Qual o tempo médio entre publicação e homologação,
--- segmentado por órgão?
--- Considerar somente órgãos com pelo menos 5 itens com ciclo.
+-- Qual a duração média (em dias) entre o lançamento do edital
+-- e a sua homologação final, segmentada por órgão?
 -- ============================================================
 
 SELECT
@@ -174,11 +173,10 @@ HAVING COUNT(f.dias_ciclo) >= 5
 ORDER BY tempo_medio_ciclo_dias DESC;
 
 
-
 -- ============================================================
--- PERGUNTA 5: DISTRIBUIÇÃO REGIONAL DAS COMPRAS
--- Quais estados e regiões concentram os gastos e apresentam
--- maior economia percentual nos itens comparáveis?
+-- PERGUNTA 5: DISTRIBUIÇÃO REGIONAL
+-- Quais estados e regiões concentram as maiores despesas e
+-- quais apresentam os melhores indicadores de desconto?
 -- ============================================================
 
 SELECT
@@ -233,11 +231,10 @@ GROUP BY
 ORDER BY volume_homologado DESC;
 
 
-
 -- ============================================================
--- PERGUNTA 6: PERFIL DOS GASTOS PÚBLICOS
--- Como os recursos estão distribuídos entre bens,
--- serviços e obras/engenharia?
+-- PERGUNTA 6: PERFIL DOS GASTOS
+-- Como os recursos se distribuem entre bens, serviços e obras
+-- e engenharia?
 -- ============================================================
 
 SELECT
