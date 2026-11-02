@@ -3,8 +3,7 @@
 .env
 .env.*
 
-# dados brutos
-data/raw/
+
 
 # dados: grandes e regeneraveis pelo pipeline
 data/processed/*
