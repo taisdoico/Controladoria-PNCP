@@ -67,8 +67,6 @@ Durante o desenvolvimento do projeto, utilizei diferentes ferramentas e tecnolog
 
 O projeto foi organizado em pastas para separar os dados, os scripts de processamento, as consultas SQL, os arquivos de visualização e a documentação.
 
-
-
 ```
 Projeto-Final-Modulo-2/
 │
@@ -101,8 +99,6 @@ Projeto-Final-Modulo-2/
 ├── README.md
 └── requirements.txt
 ```
-
-
 
 **Descrição das pastas:**
 
@@ -288,3 +284,8 @@ A partir dos resultados obtidos e das limitações identificadas durante a anál
 Dessa forma, a solução desenvolvida não se limita à apresentação de gráficos e indicadores. Ela oferece uma base para que a Controladoria identifique pontos de atenção, investigue possíveis causas, proponha ações corretivas e preventivas e acompanhe os resultados dessas ações.
 
 O projeto demonstra como a integração entre Python, MySQL, SQL e Power BI pode transformar dados públicos em informações estratégicas, contribuindo para uma gestão mais eficiente, transparente e fundamentada em dados.
+
+
+Esse é o vídeo de apresentação do Projeto Final Módulo 2
+
+[drive.google.com/file/d/1E7fJy3PUn_ZdzaO_hwCumX8G3nLO6x07/view?usp=sharing](https://drive.google.com/file/d/1E7fJy3PUn_ZdzaO_hwCumX8G3nLO6x07/view?usp=sharing)
