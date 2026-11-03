@@ -285,7 +285,4 @@ Dessa forma, a solução desenvolvida não se limita à apresentação de gráfi
 
 O projeto demonstra como a integração entre Python, MySQL, SQL e Power BI pode transformar dados públicos em informações estratégicas, contribuindo para uma gestão mais eficiente, transparente e fundamentada em dados.
 
-
 Esse é o vídeo de apresentação do Projeto Final Módulo 2
-
-[drive.google.com/file/d/1E7fJy3PUn_ZdzaO_hwCumX8G3nLO6x07/view?usp=sharing](https://drive.google.com/file/d/1E7fJy3PUn_ZdzaO_hwCumX8G3nLO6x07/view?usp=sharing)
