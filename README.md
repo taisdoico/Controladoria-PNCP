@@ -129,7 +129,7 @@ Também foram realizados testes de validação das regras de limpeza, com **54 e
 
 **Diagrama do Pipeline ETL:**
 
-![Diagrama do Pipeline ETL](docs/imagens/diagrama_pipeline.png)
+![Diagrama do Pipeline ETL](docs/imagens/Diagrama_pipeline.png)
 
 ## 7. Modelagem dimensional e banco de dados
 
